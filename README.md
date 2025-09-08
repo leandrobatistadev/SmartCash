@@ -35,7 +35,6 @@ Foi pensado e desenvolvido como um **produto digital de nível multinacional**, 
 - 📈 **Resumo Financeiro Dinâmico** (totais de entrada e saída).  
 - ⚡ **Mensagens Interativas** para erros, sucessos e alertas.  
 - 🗑️ **Reset Total com Confirmação** para recomeçar do zero.  
-- 💡 **Frases Motivacionais Dinâmicas** que aumentam o engajamento.  
 - 📱 **Design Responsivo** pronto para qualquer dispositivo.  
 
 ---
