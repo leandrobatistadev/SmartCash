@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartCash</title>
+    <link rel="stylesheet" href="SmartCash.css">
+</head>
+<body>
+   <header>
+       <div class="logo"><img src="logoSmartCash.jpg" alt="Logo SmartCash"></div>
+        <nav>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-list">
+                <li><a href="#hero" class="active"> Home</a></li>
+                <li><a href="#receitas" class="Receita">Receita</a></li>
+                <li><a href="#despesas" class="despesa">Despesa</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero" id="hero">
+        <h1>SmartCash — Seu Futuro Financeiro em Suas Mãos</h1>
+        <p>Controle receitas, despesas e alcance suas metas.</p>
+        <button onclick="document.getElementById('transacoes').scrollIntoView();">Começar Agora</button>
+    </section>
+
+    <div class="saldo" id="saldo">Saldo Atual: R$ <span id="saldo-valor">0.00</span></div>
+
+    <div class="form-container" id="receitas">
+        <h2 class="Receita">Adicionar Receita</h2>
+        <input type="text" id="descricao-receita" placeholder="Descrição (ex: Salário)" required>
+        <input type="number" id="valor-receita" placeholder="Valor" required>
+        <button class="add-receita" onclick="adicionarReceita()">Adicionar Receita</button>
+    </div>
+
+    <div class="form-container" id="despesas">
+        <h2 class="despesa">Adicionar Despesa</h2>
+        <input type="text" id="descricao-despesa" placeholder="Descrição (ex: Supermercado)" required>
+        <input type="number" id="valor-despesa" placeholder="Valor" required>
+        <button class="add-despesa" onclick="adicionarDespesa()">Adicionar Despesa</button>
+    </div>
+
+    <h2>Histórico de Transações</h2>
+    <div id="transacoes" class="transacoes"></div>
+
+    <div id="contador" class="contador">Você já registrou <span id="numero-transacoes">0</span> transações.</div>
+    <div class="progresso" id="progresso"></div>
+
+    <div id="estatisticas" class="estatisticas">
+        <div>
+            <h3>Total de Receitas</h3>
+            <p id="total-receitas">R$ 0.00</p>
+        </div>
+        <div>
+            <h3>Total de Despesas</h3>
+            <p id="total-despesas">R$ 0.00</p>
+        </div>
+    </div>
+
+    <div class="alert success" id="alert-success">Transação adicionada com sucesso!</div>
+    <div class="alert error" id="alert-error">Erro: Campos vazios ou valor inválido!</div>
+
+    <button onclick="resetar()">Apagar Todos os Registros</button>
+
+    <footer class="rodape">
+        <p> Leandro Batista 🚀</p>
+        <p>Desenvolvedor Front End</p>
+        <p> Tecnologia Utilizadas: HTML, CSS, JAVA SCRIPT</p>
+        <p><a href="#">Sobre nós</a> | <a href="#">Termos de uso</a> | <a href="#">Privacidade</a></p>
+        <p>SmartCash - 2025</p>
+    </footer>
+
+    <script src="SmartCash.js"></script>
+</body>
+</html>

@@ -1,0 +1,205 @@
+
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Fundo claro */
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo do cabeçalho */
+header {
+    background-color: #4CAF50; /* Cor do cabeçalho */
+    color: white; /* Cor do texto */
+    padding: 10px 20px; /* Reduzido para aumentar a compactação */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Sombra para efeito 3D */
+    display: flex; /* Usar flexbox para organizar logo e menu */
+    align-items: center; /* Alinha os itens verticalmente */
+}
+
+/* Logo */
+.logo img {
+    height: 150px; /* Ajuste a altura da logo conforme necessário */
+    width: auto; /* Mantém a proporção da imagem */
+}
+  
+
+/* Estilo do menu de navegação */
+nav {
+    display: flex;
+    justify-content: flex-end; /* Alinha o menu à direita */
+    flex-grow: 1; /* Permite que o menu ocupe o espaço restante */
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0; /* Remove a margem para compactar */
+    display: flex; /* Usar flexbox para alinhar os itens horizontalmente */
+}
+
+.nav-list li {
+    margin: 0 10px; /* Espaçamento menor entre os itens */
+}
+
+.nav-list button {
+    background-color: #4CAF50; /* Cor do botão */
+    color: white; /* Cor do texto do botão */
+    border: none; /* Remove a borda do botão */
+    padding: 10px 15px; /* Padding para tornar o botão clicável */
+    border-radius: 4px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor de mão ao passar o mouse */
+    transition: background-color 0.3s; /* Transição suave para a cor de fundo */
+}
+
+.nav-list button:hover {
+    background-color: #45a049; /* Cor do botão ao passar o mouse */
+}
+
+/* Estilo da seção hero */
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #4CAF50; /* Cor de fundo da seção hero */
+    color: white; /* Cor do texto */
+}
+
+/* Estilo do saldo */
+.saldo {
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+/* Estilo dos formulários */
+.form-container {
+    background-color: white; /* Fundo branco */
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    max-width: 400px; /* Largura máxima do formulário */
+}
+
+/* Estilo dos inputs e botões */
+input[type="text"],
+input[type="number"],
+button {
+    width: calc(100% - 22px); /* Largura total menos padding */
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc; /* Borda padrão */
+    border-radius: 4px; /* Bordas arredondadas */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para efeito 3D */
+    transition: all 0.3s; /* Transição suave */
+}
+
+button {
+    background-color: #4CAF50; /* Cor do botão */
+    color: white; /* Cor do texto do botão */
+    border: none; /* Remove a borda do botão */
+    cursor: pointer; /* Cursor de mão ao passar o mouse */
+}
+
+button:hover {
+    background-color: #45a049; /* Cor do botão ao passar o mouse */
+    transform: translateY(-2px); /* Efeito de elevação */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra mais intensa ao passar o mouse */
+}
+
+/* Estilo do histórico de transações */
+.transacoes {
+    margin: 20px auto;
+    padding: 10px;
+    background-color: white; /* Fundo branco */
+    color: black; /* Texto preto */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    max-width: 600px; /* Largura máxima do histórico */
+}
+
+/* Estilo dos parágrafos dentro do histórico */
+.transacoes p {
+    font-weight: bold; /* Texto em negrito */
+}
+
+/* Estilo do contador */
+.contador {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Estilo das estatísticas */
+.estatisticas {
+    display: flex;
+    justify-content: space-around; /* Espaçamento entre os itens */
+    margin: 20px 0;
+}
+
+.estatisticas div {
+    background-color: white; /* Fundo branco */
+    padding: 20px;
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Estilo de alertas */
+.alert {
+    display: none; /* Inicialmente escondido */
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px; /* Bordas arredondadas */
+}
+
+.alert.success {
+    background-color: #d4edda; /* Fundo verde claro */
+    color: #155724; /* Texto verde escuro */
+}
+
+.alert.error {
+    background-color: #f8d7da; /* Fundo vermelho claro */
+    color: #721c24; /* Texto vermelho escuro */
+}
+
+/* Estilo do rodapé */
+footer.rodape {
+    background-color: #4CAF50; /* Cor do rodapé */
+    color: white; /* Cor do texto */
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Animações com keyframes */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Aplicar animações */
+.transacoes,
+.form-container,
+.estatisticas div {
+    animation: fadeIn 0.5s ease-in-out; /* Animação de fade in */
+}
+
+button {
+    animation: slideIn 0.5s ease-in-out; /* Animação de slide in */
+}
